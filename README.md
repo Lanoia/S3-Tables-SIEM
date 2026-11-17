@@ -42,4 +42,4 @@ A Streamlit UI and scheduled detection rules are both Athena clients.
 - Every AWS resource is tagged `project=diy-siem`.
 - Every event row carries `raw_object_key` and `raw_version_id`. Annotations attach to files, not events, so this pair is the only link from an event back to its history.
 - No log data, credentials, `.env` files or Terraform state go into git.
-
+- The annotation table is enabled with the AWS CLI (`update-bucket-metadata-annotation-table-configuration`) because the Terraform AWS provider does not support it yet.
