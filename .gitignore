@@ -1,0 +1,44 @@
+# Log data and samples (download with scripts/, never commit)
+data/
+*.gz
+*.zip
+*.parquet
+*.jsonl
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+.aws/
+.streamlit/secrets.toml
+*.pem
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+.terraform.tfstate.lock.info
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
