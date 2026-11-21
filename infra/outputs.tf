@@ -9,3 +9,7 @@ output "annotation_table_role_arn" {
 output "table_bucket_arn" {
   value = aws_s3tables_table_bucket.siem.arn
 }
+
+output "athena_workgroup" {
+  value = aws_athena_workgroup.siem.name
+}
